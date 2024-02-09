@@ -1,13 +1,13 @@
 ---
 CPS: ?
-Title: RSSv1 Challenges
+Title: Incentivize Active Delegation
 Status: Open
 Category: Ledger
 Authors:
-    - Cerkoryn <ByteBanditLLC@proton.me>
+    - "Cerkoryn <ByteBanditLLC@proton.me>"
 Proposed Solutions:
-  - CIP-Incentivize Active Stake
-  - CIP-RSSv2
+  - CIP-Incentivize Active Delegation
+  - CIP-50
 Discussions:
   - https://github.com/Cerkoryn/CIPs/discussions
   - https://matrix.to/#/#cardano-space:matrix.org
@@ -15,6 +15,11 @@ Discussions:
 Created: 2024-01-15
 
 ---
+> [!IMPORTANT]  
+> TODO: This draft is still very much a work-in-progress.  Feel free to contribute via discussions or by submitted a PR.
+
+> [!IMPORTANT]  
+> TODO: Explore how these same problems will apply to inactive voter delegation after the Voltaire hardfork.  It is potentially even more of a problem because the self-interest of chasing a yield via staking ADA does not > apply with delegating voting power.
 
 ## **Abstract**
 
@@ -33,9 +38,9 @@ This CPS defines this broader problem by breaking it into five individual challe
 ### **Challenge 1 - Dormant/Inactive Stake**
 
 > [!IMPORTANT]  
-> TODO: Need data showing stake that hasn't moved.  Perhaps a chart with epoch on the x-axis and the amount of ADA in delegation Txs from just that epoch.  I imagine that would show a downward trend due to stake that was delegated during Shelley Era and then left untouched. Maybe some other charts focusing on pools instead?  Pools who have raised fees or lowered pledge on their delegates?  Other charts or data?
+> TODO: Need data showing stake that hasn't moved.  Perhaps a chart with epoch on the x-axis and the amount of ADA in delegation Txs from just that epoch.  I imagine that would show a downward trend due to stake that was delegated during Shelley Era and then left untouched. Maybe some other charts focusing on pools instead?  Pools who have raised fees or lowered pledge on their delegates?  ADA delegate to retired pools?  Other charts or data?
 
-Of the five challenges, it may benefit to tackle the issue of dormant/inactive first because stake may be stake needs to be "non-myopic" and active to support the security assumptions of Ouroboros and the RSS whitepaper. It is possible that this change alone may cause enough stake to in such a way that pledge becomes more important, multi-pool operators consolidate, K converges closer to the intended number of pools, reward distribution for active stakeholders improves, and the depletion rate of the reserves becomes more sustainable.
+Of the five challenges, it may benefit to tackle the issue of dormant/inactive stake first because stake may be stake needs to be "non-myopic", active, and free of "rational ignornance" to support the security assumptions of Ouroboros and the RSS whitepaper. It is possible that this change alone may cause enough stake to in such a way that pledge becomes more important, multi-pool operators consolidate, K converges closer to the intended number of pools, reward distribution for active stakeholders improves, and the depletion rate of the reserves becomes more sustainable.
 
 > [!NOTE]
 > According to [Reward Sharing Schemes for Stake Pools(2020)](https://arxiv.org/ftp/arxiv/papers/1807/1807.11218.pdf) p.23:
@@ -72,10 +77,10 @@ Additionally, in some sense it is expected that inactive delegators should have 
 
 ### **Challenge 3 - SPO Decentralization**
 
-- K not converged on number of pools as designed (need citation)
+- Number of pools not converged on K as designed (need citation)
 - K is related to number of pools, not number of SPOs.
 - SPOs are what count for MAV, not pools.
-- More pools likely means worse network latency (need data/citation)
+- More pools likely means worse network latency (need data/citation? https://www.essentialcardano.io/article/an-analysis-of-the-research-underpinning-cardanos-scalability )
 
 ### **Challenge 4 - Insignificance of Pledge**
 
@@ -97,6 +102,7 @@ Additionally, in some sense it is expected that inactive delegators should have 
 
 - Rewards for delegators/SPOs are mediocre at best.
 - Many rewards come from the reserce, but eventually it will be depleted, how will operations be sustained then?
+- Block rewards vs number of pools (data?)
 
 ## **Goals**
 
