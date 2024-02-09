@@ -16,10 +16,10 @@ Created: 2024-01-15
 
 ---
 > [!IMPORTANT]  
-> TODO: This draft is still very much a work-in-progress.  Feel free to contribute via discussions or by submitted a PR.
+> TODO: This draft is still very much a work-in-progress.  Feel free to contribute via discussions or by submitting a PR.
 
 > [!IMPORTANT]  
-> TODO: Explore how these same problems will apply to inactive voter delegation after the Voltaire hardfork.  It is potentially even more of a problem because the self-interest of chasing a yield via staking ADA does not > apply with delegating voting power.
+> TODO: Explore how these same problems will apply to inactive voter delegation after the Voltaire hardfork.  It is potentially even more of a problem because the self-interest of chasing a yield via staking ADA does not apply with delegating voting power.
 
 ## **Abstract**
 
