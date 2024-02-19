@@ -1,6 +1,6 @@
 ---
 CIP: ?
-Title: Incentivize Active Stake
+Title: Sticky Delegation
 Category: Ledger
 Status: Active
 Authors:
