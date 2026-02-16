@@ -12,6 +12,7 @@ Authors:
     - Sebastian Nagel <sebastian.nagel@ncoding.at>
 Implementors:
     - Cardano Scaling team <https://github.com/cardano-scaling>
+    - Blink Labs <https://github.com/blinklabs-io>
 Discussions:
     - https://github.com/cardano-foundation/CIPs/pull/876
 Created: 2024-08-02
@@ -592,6 +593,16 @@ message = [
 hasMore = false / true
 isBlocking = false / true
 ```
+
+### Network magic
+
+In order to identify messages belonging to a specific protocol, each DMQ network is identified by a unique network magic number:
+
+| Protocol | Cardano network | DMQ network magic number |
+| -------- | --------------- | ------------------------ |
+| Mithril  | `preview`       | `2147483650`             |
+| Mithril  | `preprod`       | `2147483649`             |
+| Mithril  | `mainnet`       | `2912307721`             |
 
 ## Rationale: how does this CIP achieve its goals?
 
