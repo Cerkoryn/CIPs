@@ -2,7 +2,7 @@
 CIP: 151
 Title: On-Chain Registration - Stake Pools
 Category: Metadata
-Status: Active
+Status: Proposed
 Authors:
     - Adam Dean <adam@crypto2099.io>
     - Martin Lang <martin@martinlang.at>
@@ -13,8 +13,6 @@ Implementors:
     -   CNTools: https://github.com/cardano-community/guild-operators/tree/alpha
     -   SPO Scripts: https://github.com/gitmachtl/scripts
     -   Reference Implementation: https://github.com/crypto2099/calidus-demo
-    -   VeriGlyph Sentinel: https://sentinel.veriglyph.io
-    -   Ekklesia: https://ekklesia.vote
 Discussions:
     - https://github.com/cardano-foundation/CIPs/pull/999
     - https://forum.cardano.org/t/new-calidus-pool-key-for-spos-and-services-interacting-with-pools
@@ -31,7 +29,7 @@ support for stake pools to register verifiable information on-chain.
 
 ## Motivation: why is this CIP necessary?
 
-By extending the existing [CIP-0088] specification, we can provide an extensible
+By extending the existing [CIP-0088] specification we can provide an extensible
 framework for stake pool operators (SPOs) to provide verifiable, on-chain
 information related to their pool operation. This method is preferred over a
 change to the in-ledger stake pool registration certificates because additional
@@ -411,7 +409,6 @@ shown an interest in using it as a method of authentication and validation.
     * [ ] Blockfrost
     * [x] CN Tools
     * [x] SPO Scripts
-    * [x] VeriGlyph
 * Wallets
     * [x] Eternl
     * [x] Typhon
@@ -420,8 +417,7 @@ shown an interest in using it as a method of authentication and validation.
     * [ ] CardanoScan
     * [ ] AdaStat
     * [ ] PoolTool.io
-    * [x] DripDropz
-    * [x] Ekklesia
+    * [ ] DripDropz
 
 ### Implementation Plan
 

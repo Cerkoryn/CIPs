@@ -59,9 +59,9 @@
       "title": "RewardAddress",
       "type": "string",
       "format": "bech32",
-      "pattern": "^(stake1[02-9ac-hj-np-z]{53}|stake_test1[02-9ac-hj-np-z]{53})$",
+      "pattern": "^(stake1|stake_test1)[02-9ac-hj-np-z]*$",
       "examples": [
-        "stake1u9u5vlrf4xkxv2qpwngf6cjhtw542ayty80v8dyr49rf5egnuvsnm"
+        "stake1vpu5vlrf4xkxv2qpwngf6cjhtw542ayty80v8dyr49rf5egfu2p0u"
       ]
     },
     "ByronAddress": {
@@ -77,27 +77,27 @@
       "title": "PointerAddress",
       "type": "string",
       "format": "bech32",
-      "pattern": "^(addr1[02-9ac-hj-np-z]{62}|addr_test1[02-9ac-hj-np-z]{62})$",
+      "pattern": "^(addr1|addr_test1)[02-9ac-hj-np-z]*$",
       "examples": [
-        "addr1gx2fxv2umyhttkxyxp8x0dlpdt3k6cwng5pxj3jhsydzer5pnz75xxcrzqf96k"
+        "addr1vpu5vlrf4xkxv2qpwngf6cjhtw542ayty80v8dyr49rf5eg0yu80w"
       ]
     },
     "EnterpriseAddress": {
       "title": "EnterpriseAddress",
       "type": "string",
       "format": "bech32",
-      "pattern": "^(addr1[02-9ac-hj-np-z]{53}|addr_test1[02-9ac-hj-np-z]{53})$",
+      "pattern": "^(addr1|addr_test1)[02-9ac-hj-np-z]*$",
       "examples": [
-        "addr1v9u5vlrf4xkxv2qpwngf6cjhtw542ayty80v8dyr49rf5eg0kvk0f"
+        "addr1vpu5vlrf4xkxv2qpwngf6cjhtw542ayty80v8dyr49rf5eg0yu80w"
       ]
     },
     "BaseAddress": {
       "title": "BaseAddress",
       "type": "string",
       "format": "bech32",
-      "pattern": "^(addr1[02-9ac-hj-np-z]{98}|addr_test1[02-9ac-hj-np-z]{98})$",
+      "pattern": "^(addr1|addr_test1)[02-9ac-hj-np-z]*$",
       "examples": [
-        "addr1q9u5vlrf4xkxv2qpwngf6cjhtw542ayty80v8dyr49rf5etege7xn2dvvc5qzaxsn439wkaf246gkgw7cw6g822xnfjsyzwht9"
+        "addr1vpu5vlrf4xkxv2qpwngf6cjhtw542ayty80v8dyr49rf5eg0yu80w"
       ]
     },
     "Address": {
